@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="はじめてFigmaを使用する方にちょこっと便利な機能を紹介します">
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+  <!-- 検索対象外 
+  <meta name="robots" content="noindex,nofollow">-->
+  <!-- icon -->
+  <link rel="icon" href="../favicon.svg" type="images/svg+xml">
+  <link rel="icon alternate" href="../favicon.png" type="images/png">
+  <link rel="apple-touch-icon" href="../images/menu/webclip.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../css/basic.css">
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/script.js"></script>
+  <title>第一章　きほん①</title>
+  </head>
+  <body>
+<!--header-->
+    <header>
+      <p>
+        第一章　きほん①
+      </p>
+      <button>
+        <img src="../images/menu/button.png" width="24" height="24" alt="Buttoon">
+      </button>
+    </header>
+   <nav>
+     <ul class="hamburgerMenu">
+       <li class="hamburgerMenu-liItem"><a href="../index.html">MENU</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第一章　基本</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/strat.html">はじめる</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-1.html">きほん①</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-2.html">きほん②</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-3.html">きほん③</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第二章　プラグイン</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-2/plugin-ex.html">プラグインとは</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-2/plugin-list.html">一覧</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第三章　プロトタイプ</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-ex-1.html">プロトタイプとは</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-header.html">ヘッダーの固定</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-animation.html">アニメーション</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>記事</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../article/article-1.html">背景作ってみた</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../article/article-2.html">ホバーつけてみた</a></li>
+       <li class="hamburgerMenu-liItem-name"><p></p></li>
+     </ul>
+   </nav>
+<!--main-->
+    <main>
+      <p class="Anchor">
+        <a href="#termAnchor">Figmaの用語&nbsp;▼</a>
+        <a href="#shortcutAnchor">Figmaのショートカットキー&nbsp;▼</a>
+      </p>  
+      <div id="termAnchor"></div>
+      <div class="taitle">
+          <p>
+          Figmaの用語
+          </p>
+      </div>
+<!--section-->
+      <section class="no-frameArea">
+        <p class="no-taitle">
+          はじめにFigmaの用語を確認しましょう
+        </p>
+        <p class="contentsInner">
+          Figmaを使用する上で、最低限押さえておくべき用語を記載します。使用しながら少しずつ覚えていきましょう☆<br>
+          <br>
+          Figmaのオブジェクトで最も使用するのは「 <span style="color:#F24E1E;"><b>フレーム</b></span>」です。<br>
+          デザインの描画範囲を決めるものであり、プロトタイプツール（画面遷移）の遷移先、レイアウトの調整のための親オブジェクトの役割と・・「フレーム」にはたくさん役割があって万能なんだなと覚えておいてください。
+        </p>
+        <br>
+        <img src="../images/basic/basic-1/basic-01.png" alt="フレーム画像">
+      </section>
+      <p class="arrow">⬇︎</p>
+      <section class="no-termArea">
+        <p class="no-taitle">
+          ＼基本的な用語／
+        </p>
+        <table class="termT">
+          <tr>
+            <th>用語</th>
+            <th>内容</th>
+          </tr>
+          <tr>
+            <td>オブジェクト</td>
+            <td>要素（物体）。ここではフレームや図形・線・パーツ</td>
+          </tr>
+          <tr>
+            <td>フレーム</td>
+            <td>デザインの描画範囲。親オブジェクト</td>
+          </tr>
+          <tr>
+            <td>セクション</td>
+            <td>オブジェクトのグルーピング機能。キャンバスの整理が目的</td>
+          </tr>
+          <tr>
+            <td>オートレイヤー</td>
+            <td>オブジェクトのレイアウト調整を行うこと</td>
+          </tr>
+          <tr>
+            <td>制約（コンストレイン）</td>
+            <td>フレーム(外枠)のサイズが変わったときに、中のオブジェクトがどのように振る舞うかを決めるもの（左寄せで固定、右寄せで固定等）</td>
+          </tr>
+          <tr>
+            <td>インスタンス</td>
+            <td>コンポーネントから派生したオブジェクト</td>
+          </tr>
+          <tr>
+            <td>プラグイン</td>
+            <td>便利なサービスをFigma上で行える拡張機能</td>
+          </tr>
+          <tr>
+            <td>プロトタイプ</td>
+            <td>画面遷移やボタンアクション等を、実際に作成したデザインで再現できる機能</td>
+          </tr>
+          <tr>
+            <td>マスク</td>
+            <td>オブジェクトの特定の領域を表示しながら残りの領域を隠す</td>
+          </tr>
+          <tr>
+            <td>エフェクト</td>
+            <td>オブジェクトに影やぼかしを加える</td>
+          </tr>
+          <tr>
+            <td>カラースタイル</td>
+            <td>色を管理する</td>
+          </tr>
+          <tr>
+            <td>テキストスタイル</td>
+            <td>テキストを管理する</td>
+          </tr>
+        </table>
+      </section>
+      <br>
+      <section class="no-shortcutArea">
+        <div id="shortcutAnchor"></div>
+        <div class="taitle">
+          <p>
+          Figmaのショートカットキー
+          </p>
+        </div>
+        <p class="contentsInner">
+          Figmaでは便利なショートカットキーがあります。ツールの切り替え系ショートカットキーは押さえておきましょう。ここではよく使用するショートカットキーを紹介します☆
+        </p>
+        <br>
+        <p class="no-taitle">
+          ＼ツールの着り替え／
+        </p>
+        <table class="toolT">
+          <tr>
+            <th>ショートカット</th>
+            <th>キー</th>
+            <th>説明</th>
+          </tr>
+          <tr>
+            <td>移動ツール</td>
+            <td>V</td>
+            <td>オブジェクトの選択移動する際に使用</td>
+          </tr>
+          <tr>
+            <td>フレームツール</td>
+            <td>F</td>
+            <td>フレームの作成</td>
+          </tr>
+          <tr>
+            <td>テキストツール</td>
+            <td>T</td>
+            <td>テキストを入力する</td>
+          </tr>
+          <tr>
+            <td>長方形ツール</td>
+            <td>R</td>
+            <td>長方形を作成する。Shiftを押しながら設置すると正方形が描ける</td>
+          </tr>
+          <tr>
+            <td>楕円ツール</td>
+            <td>O</td>
+            <td>円を作成する。Shiftを押しながら設置すると正円が描ける</td>
+          </tr>
+          <tr>
+            <td>線ツール</td>
+            <td>L</td>
+            <td>線を作成する</td>
+          </tr>
+          <tr>
+            <td>コメントツール</td>
+            <td>C</td>
+            <td>コメントを残せる</td>
+          </tr>
+        </table>
+        <br>
+        <p class="no-taitle">
+          ＼よく使用する便利系／
+        </p>
+        <table class="variousT">
+          <tr>
+            <th>ショートカット</th>
+            <th>キー</th>
+            <th>説明</th>
+          </tr>
+          <tr>
+            <td>画像の編集モード</td>
+            <td>Enter</td>
+            <td>ベクトル編集。頂点の編集が可能</td>
+          </tr>
+          <tr>
+            <td>コンポーネント化</td>
+            <td>⌘/option/K</td>
+            <td>繰り返し使用するデザインをテンプレート化</td>
+          </tr>
+          <tr>
+            <td>選択範囲のフレーム化</td>
+            <td>⌘/option/G</td>
+            <td>選択範囲をフレーム化する</td>
+          </tr>
+          <tr>
+            <td>画像の挿入</td>
+            <td>⌘/option/K</td>
+            <td>画像モーダルの表示</td>
+          </tr>
+          <tr>
+            <td>レイヤーパネルを全て閉じる</td>
+            <td>option/L</td>
+            <td>開いている、階層のレイヤーパネルを全て閉じる</td>
+          </tr>
+          <tr>
+            <td>レイアウトグリッドの表示</td>
+            <td>option/G</td>
+            <td>レイアウトグリッドの表示・非表示</td>
+          </tr>
+          <tr>
+            <td>対象レイヤーの選択</td>
+            <td>⌘/クリック</td>
+            <td>レイヤーが複数重なっているなかでフォーカスしているレイヤーに飛んでくれる</td>
+          </tr>
+          <tr>
+            <td>同じ要素をコピー</td>
+            <td>option/shift/ドラッグ</td>
+            <td>同じ要素をコピーしてドラッグしたところに設置する</td>
+          </tr>
+          <tr>
+            <td>色の抽出（スポイト）</td>
+            <td>I</td>
+            <td>色のスポイト機能</td>
+          </tr>
+        </table>
+      </section>
+<!-- TOPへ戻る -->
+      <div id="page_top">
+        <a href="#"><img src="../images/TOP-back.svg" width="48" height="48" alt="Buttoon"></a>
+      </div>
+    </main>
+<!-- footer -->
+    <div class="MENUTOP">
+      <a href="../index.html">◀︎MENUへ戻る</a>
+    </div>
+   <footer>
+      <p>©2023 Rio. All Rights Reserved.test</p>
+   </footer> 
+ </body>
+</html>
