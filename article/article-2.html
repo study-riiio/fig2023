@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="はじめてFigmaを使用する方にちょこっと便利な機能を紹介します">
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+  <!-- 検索対象外 
+  <meta name="robots" content="noindex,nofollow">-->
+  <!-- icon -->
+  <link rel="icon" href="../favicon.svg" type="images/svg+xml">
+  <link rel="icon alternate" href="../favicon.png" type="images/png">
+  <link rel="apple-touch-icon" href="../images/menu/webclip.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../css/article.css">
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/script.js"></script>
+  <title>ちょっと楽しい記事　ボタンにホバーを入れてみた</title>
+  </head>
+  <body>
+<!--header-->
+    <header>
+      <p>
+        ちょっと楽しい記事　ボタンにホバーを入れてみた
+      </p>
+      <button>
+        <img src="../images/menu/button.png" width="24" height="24" alt="Buttoon">
+      </button>
+    </header>
+   <nav>
+     <ul class="hamburgerMenu">
+       <li class="hamburgerMenu-liItem"><a href="../index.html">MENU</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第一章　基本</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/strat.html">はじめる</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-1.html">きほん①</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-2.html">きほん②</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-3.html">きほん③</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第二章　プラグイン</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-2/plugin-ex.html">プラグインとは</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-2/plugin-list.html">一覧</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第三章　プロトタイプ</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-ex-1.html">プロトタイプとは</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-header.html">ヘッダーの固定</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-animation.html">アニメーション</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>記事</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../article/article-1.html">背景作ってみた</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../article/article-2.html">ホバーつけてみた</a></li>
+       <li class="hamburgerMenu-liItem-name"><p></p></li>
+     </ul>
+   </nav>
+<!--main-->
+    <main>
+      <div class="taitle">
+        <p class="tatleInner">
+          ボタンにホバーを入れてみた
+        </p>
+        <p class="date">
+          2023.06.25
+        </p>
+      </div>
+      <br>
+      <p class="contentsInner">
+        プロトタイプの応用編となります☆
+        マウスカーソルを当てるとホバーがついて「ボタンだよ〜。押せるよ〜」ということが分かりやすいのではないかと思いFigmaのプロトタイプで導入できる方法を調べてみました！
+      </p>
+      <section class="no-background-ex-Area">
+        <p class="no-taitle">方法：ホバー</p>
+        <div class="backgroundNotoInner">
+          <p>
+            前提：ボタンを作成済み　※今回はMENUページのボタンに実装します<br>
+            ①デザインパネル＞プロパティ＞「バリアント」を選択<br>
+            ②アートボードで対象のオブジェクト＞「➕バリアント」を押下<br>
+            ③作成したバリアントの名前を分かりやすく「ホバー」等に変更します（任意）<br>
+            ④③のオブジェクトに、マウスカーソルを当てた際のアクションを設定<br>
+            ⑤トリガーとなるオブジェクトを選択し、プロトタイプパネル＞インタラクション「➕」を選択<br>
+            ⑥トリガーとアクションを設定
+          </p>
+        </div>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ①デザインパネル＞プロパティ＞「バリアント」を選択
+          </p>
+          <img src="../images/article/hover/hover-01.png" alt="ホバー①">
+        </div>
+        <p class="arrow">⬇︎</p>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ②アートボードで対象のオブジェクト＞「➕バリアント」を押下
+          </p>
+          <img src="../images/article/hover/hover-02.png" alt="ホバー②">
+        </div>
+        <p class="arrow">⬇︎</p>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ③作成したバリアントの名前を分かりやすく「ホバー」等に変更します（任意）
+          </p>
+          <img src="../images/article/hover/hover-03.png" alt="ホバー③">
+        </div>
+        <p class="arrow">⬇︎</p>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ④③のオブジェクトに、マウスカーソルを当てた際のアクションを設定
+          </p>
+          <p class="no-taitle-sub">
+            例ではマウスカーソルを当てた際に色を反転させたいので、background-colorをブラック、font colorをホワイトに設定
+          </p>
+          <img src="../images/article/hover/hover-04.png" alt="ホバー④">
+        </div>
+        <p class="arrow">⬇︎</p>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ⑤トリガーとなるオブジェクトを選択し、プロトタイプパネル＞インタラクション「➕」を選択
+          </p>
+          <img src="../images/article/hover/hover-05.png" alt="ホバー⑤">
+        </div>
+        <p class="arrow">⬇︎</p>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ⑥トリガーとアクションを設定
+          </p>
+          <p class="no-taitle-sub">
+            「マウスオーバー」を選択＞「次に変更」を選択＞③で名称を変更した「ホバー」を選択
+          </p>
+          <img src="../images/article/hover/hover-06.png" alt="ホバー⑥">
+        </div>
+        <div class="Line"></div>
+        <div class="ex-Area">
+          <p class="no-taitle-last">
+            ＼結果／ 設定したボタンにカーソルを当てると・・！
+          </p>
+          <img src="../images/article/hover/hover-07.png" alt="ホバー結果-1">
+        </div>
+        <p class="arrow">⬇︎</p>
+        <div class="ex-Area">
+          <p class="no-taitle-last">
+            アクションのホバーが入りました！
+          </p>
+          <img src="../images/article/hover/hover-08.png" alt="ホバー結果-2">
+          <div class="no-taitle-last-mark">
+            <p class="no-taitle-last-mark-child">
+            ちょっとしたアクションですが、お客様もデザインのイメージがつきやすくなるのではないかと思います。<br>
+            ボタンやリンクにぜひ入れてみてください☆
+            </p>
+          </div>
+        </div>
+      </section>
+<!-- TOPへ戻る -->
+      <div id="page_top">
+        <a href="#"><img src="../images/TOP-back.svg" width="48" height="48" alt="Buttoon"></a>
+      </div>
+    </main>
+<!-- footer -->
+    <div class="MENUTOP">
+      <a href="../index.html">◀︎MENUへ戻る</a>
+    </div>
+   <footer>
+      <p>©2023 Rio. All Rights Reserved.test</p>
+   </footer> 
+ </body>
+</html>
