@@ -1,0 +1,540 @@
+@charset "utf-8";
+/*共通*/
+body {
+ font-family: "Zen Kaku Gothic New", sans-serif;
+ font-size: 22px;
+ margin: 0;
+ display: flex;
+ flex-flow: column;
+ min-height: 100vh;
+ background-color: #F1F1F1;
+}
+header {
+  position: sticky; /* 親要素に合わせてheaderを固定 */
+  top: 0;　/* 親要素のtop位置に */
+  width: 100%;
+  line-height: 32px;
+  padding: 32px 0;
+  text-align: center;
+  background-color: #30303A;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.MENUTOP {
+  text-align: right;
+}
+.MENUTOP a {
+  font-size: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+.MENUTOP a:hover {/*ボタンホバー*/
+  color: #FF7262;
+}
+footer {
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  background-color: #30303A;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;  
+}
+main {
+  margin: 32px 200px;
+}
+/*矢印*/
+.arrow {
+  font-size: 42px;
+  text-align: center;
+}
+/*img*/
+img {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: block;
+  margin-bottom: 40px;
+  border: 2px solid #30303A;
+}
+button img {
+  width: 24px;
+  height: 24px;
+  margin: initial;
+  display: initial;
+  margin-bottom: initial;
+  border: initial;
+}
+.imag2column img {
+  width: auto;
+  height: 400px;
+  display: block;
+}
+.imag4column img {
+  width: auto;
+  height: 200px;
+  display: block;
+  margin-bottom: initial;
+  border: initial;
+}
+.trivia-about img {
+  width: auto;
+  height: 400px;
+  display: block;
+  margin-bottom: initial;
+}
+.layerpanelT img {
+  width: 32pxpx;
+  height: 32px;
+  margin-bottom: initial;
+  border: initial;
+}
+.colorstyle img,.textstyle img,.weightstyle img {
+  width: auto;
+  height: 400px;
+  border: initial;
+  margin: 0 40px;
+}
+.colorstyle p,.textstyle p,.weightstyle p {
+  margin: 0 40px;
+}
+/*taitle*/
+.taitle p {
+  font-size: 28px;
+  font-weight: 700;
+  border-bottom: 2px solid #0ACF83;
+  margin: 24px 0px;
+  padding-left: 20px;
+}
+.taitle p:before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-image: url(../images/basic/basic-1/Icon-5.png);
+  background-size: contain;
+  position: relative;
+  top: 5px;
+  left: 0px;
+  z-index: -100;
+}
+.chapter-3taitle p {
+  font-size: 28px;
+  font-weight: 700;
+  border-bottom: 2px solid #0ACF83;
+  margin: 24px 0px;
+  padding-left: 20px;
+}
+.chapter-3taitle p:before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-image: url(../images/basic/basic-3/Icon-6.png);
+  background-size: contain;
+  position: relative;
+  top: 10px;
+  left: 0px;
+  z-index: -100;
+}
+.trivia-taitle p {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  align-items: flex-end;
+  font-size: 24px;
+  font-weight: 700;
+}
+.trivia-taitle p:before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/start/Icon-4.png);
+  background-size: contain;
+  position: relative;
+  top: 5px;
+  right: 5px;
+  z-index: -100;
+}
+.no-taitle {
+  font-size: 22px;
+  font-weight: 500;
+}
+.contentsInner {
+  padding: 8px 24px;
+}
+.colorstyleNoto {
+  margin: 1.5em;
+}
+.colorstyleNotoInner {
+  border: 2px solid #0ACF83;
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+}
+.imag2column {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  margin-top: 1.5em;
+}
+.imag4column {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  margin-top: 1.5em;
+}
+.NotoInner {
+  margin: 2em;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #FF7262;
+}
+.inlineText {
+  display: inline;
+  background-color: rgba(255, 114, 98, 0.3);
+  font-weight: 500;
+  padding-left: 10px;
+}
+/*URL*/
+.URL {
+  display: flex;
+  align-items: flex-end;
+  padding: 0px 24px;
+}
+.URL p {
+  margin-right: 10px;
+}
+.URL a {
+  font-size: 24px;
+  color: #000000;
+}
+.URL a:hover {/*ボタンホバー*/
+  color: #FF7262;
+}
+.URL-flex {
+  display: flex;
+  align-items: flex-end;
+  padding: 0px 24px;
+}
+.URL-flex p {
+  margin-right: 10px;
+}
+.URL-flex a {
+  font-size: 24px;
+  color: #000000;
+}
+.URL-flex a:hover {/*ボタンホバー*/
+  color: #FF7262;
+}
+.udemy-URL {
+  margin-bottom: 0.5em;
+}
+.udemy-URL a {
+  font-size: 20px;
+  color: #000000;
+}
+.udemy-URL a:hover {/*ボタンホバー*/
+  color: #FF7262;
+}
+/*豆知識*/
+.trivia-about {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  border: 2px solid #F24E1E;
+  padding: 24px;
+  background-color: #ffffff;
+}
+.trivia-contentsInner {
+  margin-left: 1.5em;
+}
+dt {
+  font-weight: 500;
+}
+dd {
+  font-size: 0.9em;
+}
+.Noto {
+  margin-left: 16px;
+}
+.Noto-title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+/*udemy*/
+.udemy-about {
+  border: 2px solid #0ACF83;
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+}
+.udemy-Noto {
+  padding-bottom: 1em;
+  font-weight: 500;
+}
+.Nav {
+  font-weight: 500;
+}
+/*テーブル*/
+table {
+  table-layout: auto;
+  width: 100%;
+  font-size: 20px;
+}
+table,table th,table td {
+  text-align: left;
+  border: 1px solid #30303A;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+table th,table td {
+  padding: 8px 16px;
+}
+table th {
+  background-color: rgba(10, 207, 131, 0.3);
+}
+/*アンカーリンク*/
+.Anchor a {
+  color: #30303A;
+  margin-right: 20px;
+}
+.Anchor a:hover {/*ボタンホバー*/
+  color: #FF7262;
+}
+#shortcutAnchor,#termAnchor,#toolAnchor,#designpanelAnchor,#layerpanelAnchor,
+#FlameAnchor,#FontAnchor,#styleAnchor,#componentAnchor,#layoutAnchor {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+li {
+  list-style:none;
+}
+.Anchor li {
+  padding: 8px 0;
+}
+/*ヘッダーメニュー*/
+button {
+  position:absolute;
+  top:32px;
+  left:24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+button:focus{
+  outline:none;
+}
+.hamburgerMenu {
+  display:none;
+  list-style-type:none;
+  width: 30%;
+  height: 90%;
+  box-sizing: border-box;
+  position: fixed;
+  overflow: auto;
+  right: 70%;
+  background-color: #ffffff;
+}
+.hamburgerMenu-liItem a {
+  text-decoration:none;
+  font-weight:bold;
+  display:block;
+  padding:0.5em 1em;
+  color:#30303A;
+  background:#ffffff;
+  border-bottom:1px solid #30303A;
+}
+.hamburgerMenu-liItem a:hover {/*ボタンホバー*/
+  background: rgba(251, 188, 4, 0.3);
+}
+.hamburgerMenu-liItem-name p {
+  text-decoration:none;
+  font-weight:bold;
+  display:block;
+  padding:0.5em 1em;
+  color:#ffffff;
+  background:#30303A;
+  border-bottom:1px solid #30303A;
+}
+/* トップへ戻るボタン */
+#page_top img {
+  width: 48px;
+  height: 48px;
+  margin: initial;
+  display: initial;
+  margin-bottom: 40px;
+  border: initial;
+}
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+#page_top a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 20px;
+}
+/*レスポンシブ　960px以下*/
+@media screen and (max-width: 960px) {
+  header {
+    font-size: 0.8em;
+    padding: 16px 0;
+  }
+  footer {
+    width: 100%;
+    font-size: 0.5em;
+  } 
+  .hamburgerMenu {
+    width: 100%;
+    height: 90%;
+    right: 0%;
+  }
+  button {
+    position:absolute;
+    top:16px;
+    left:16px;
+  }
+  main {
+    margin: 8px 8px;
+  }
+  #page_top {
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+  }
+  .taitle p {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 8px;
+    padding-left: 4px;
+  }
+  .taitle p:before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 5px;
+    left: 0px;
+  }
+  .trivia-taitle p {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-end;
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  .trivia-taitle p:before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/start/Icon-4.png);
+    background-size: contain;
+    z-index: -100;
+  }
+  .chapter-3taitle p {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 8px;
+    padding-left: 4px;
+  }
+  .chapter-3taitle p:before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/basic/basic-3/Icon-6.png);
+    background-size: contain;
+  }
+  .trivia-about,.udemy-Noto,.udemy-URL a {
+    font-size: 0.8em;
+  }
+  .no-taitle {
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  .contentsInner {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+  .URL {
+    display: block;
+    padding: 0px 8px;
+    font-size: 0.8em;
+  }
+  .URL a {
+    font-size: 0.9em;
+    word-break: break-all;
+  }
+  .arrow {
+    font-size: 1.5em;
+  }
+  img {
+    margin-bottom: 1em;
+  }
+  .Anchor a {
+    display: block;
+  }
+  table {
+    font-size: 0.6em;
+  }
+  table th,table td {
+    padding: 4px;
+  }
+  .NotoInner {
+    margin: 8px;
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+  .trivia-about {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+  }
+  .trivia-contentsInner {
+    margin-left: 0.5em;
+  }
+  .trivia-about img {
+    width: 60%;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin-bottom: initial;
+    border: initial;
+  }
+  .imag2column {
+    display: block;
+    margin-top: 0.2em;
+  }
+  .imag2column img,.weightstyle img,.colorstyle img {
+    width: 60%;
+    height: auto;
+    margin-bottom: initial;
+    margin: auto;
+  }
+  .imag4column img,.imag4column p {
+    display: none;
+  }
+  .colorstyleNoto {
+    margin: 8px;
+  }
+  .colorstyleNotoInner {
+    border: 2px solid #0ACF83;
+    padding: 8px;
+    text-align: left;
+    font-size: 0.8em;
+  }
+}
