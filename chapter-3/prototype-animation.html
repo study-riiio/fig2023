@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="はじめてFigmaを使用する方にちょこっと便利な機能を紹介します">
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+  <!-- 検索対象外 
+  <meta name="robots" content="noindex,nofollow">-->
+  <!-- icon -->
+  <link rel="icon" href="../favicon.svg" type="images/svg+xml">
+  <link rel="icon alternate" href="../favicon.png" type="images/png">
+  <link rel="apple-touch-icon" href="../images/menu/webclip.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../css/prototype.css">
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/script.js"></script>
+  <title>第三章　ちょこっとアニメーション</title>
+  </head>
+  <body>
+<!--header-->
+    <header>
+      <p>
+        第三章　ちょこっとアニメーション
+      </p>
+    <button>
+        <img src="../images/menu/button.png" width="24" height="24" alt="Buttoon">
+      </button>
+    </header>
+   <nav>
+     <ul class="hamburgerMenu">
+       <li class="hamburgerMenu-liItem"><a href="../index.html">MENU</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第一章　基本</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/strat.html">はじめる</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-1.html">きほん①</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-2.html">きほん②</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-3.html">きほん③</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第二章　プラグイン</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-2/plugin-ex.html">プラグインとは</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-2/plugin-list.html">一覧</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第三章　プロトタイプ</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-ex-1.html">プロトタイプとは</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-header.html">ヘッダーの固定</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-animation.html">アニメーション</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>記事</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../article/article-1.html">背景作ってみた</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../article/article-2.html">ホバーつけてみた</a></li>
+       <li class="hamburgerMenu-liItem-name"><p></p></li>
+     </ul>
+   </nav>
+<!--main-->
+    <main>
+      <div class="prototype-header-taitle">
+        <p>
+          プロトタイプのアニメーション
+        </p>
+      </div>
+      <p class="contentsInner">
+        FigmaのプロトタイプでリアルなUIアニメーションを再現する方法を紹介します。
+      </p>
+      <br>
+      <p class="no-taitle">・自動回転アニメーション（ウェイトカーソル）</p>
+      <p class="no-taitle">・画面遷移時のアニメーション</p>
+      <br>
+      <section class="prototype-animation-ka-cursor-Area">
+        <p class="no-taitle-Noto">方法：自動回転アニメーション（ウェイトカーソル）</p>
+        <div class="prototypeNotoInner">
+          <p>
+            ①5つのデザインを準備する。回転前のデザイン・90度回転したデザイン・180度回転したデザイン・270度（－90度）回転したデザイン・360度（－180度）回転したデザイン<br>②デザイン同士を矢印（=Connection）で繋ぐ。インタラクション＞アフターディレイを設定
+          </p>
+        </div>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ①5つのデザインを準備する。
+          </p>
+          <img src="../images/prototype/prototype-animation/prototype-animation-01.png" alt="アニメーション画像①">
+        </div>
+        <p class="arrow">⬇︎</p>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ②デザイン同士を矢印（=Connection）で繋ぐ。インタラクション＞アフターディレイを設定
+          </p>
+          <img src="../images/prototype/prototype-animation/prototype-animation-02.png" alt="アニメーション画像②">
+        </div>
+        <p class="arrow">⬇︎</p>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ＼結果／ツールバーの再生ボタンを押下して確認
+          </p>
+          <video src="../images/prototype/prototype-animation/animation-cursor.mov"autoplay muted playsinline preload loop></video>
+        </div>
+        <p class="NotoInner">
+          アニメーションを繋ぐ際に秒数（ms）を小さくすると、より早くウェイトカーソルを回すことが可能です。様々な秒数を設定して試してみてください☆
+        </p>
+      </section>
+      <section class="page-Area">
+        <div class="plugin-titleInner">
+          <div class="prototype-page-title">
+          ページトランジションのアニメーション
+          </div>
+        </div>
+        <p class="contentsInner">
+          トランジションはページ移動などにビジュアルな効果を与える機能です。画面の切り替えを滑らかに見せたり、アニメーションによる演出を施すことで最も伝えたい情報を強調することができます。
+        </p>
+        <br>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            &#9679;ディゾルブ
+          </p>
+          <p class="contentsInner">
+            ディゾルブがよく使用される演出の一つが「時間の変化」です。遷移前の画面を残しつつ徐々に遷移先の画面を演出する際に使用します。
+          </p>
+          <video src="../images/prototype/prototype-animation/animation-dissolve.mov"autoplay muted playsinline preload loop></video>
+        </div>
+        <br>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            &#9679;プッシュ
+          </p>
+          <p class="contentsInner">
+            遷移元の画面を押し出して、遷移先の画面を演出させます。
+          </p>
+          <video src="../images/prototype/prototype-animation/animation-push.mov"autoplay muted playsinline preload loop></video>
+        </div>
+        <br>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            &#9679;スライド
+          </p>
+          <p class="contentsInner">
+            左から右、右から左、上から下等にホーム画面がスライドインしてくるシンプルなアニメーションの演出です。ホームページ全体に躍動感を出すことが可能です。遷移元の画面にスライドして表示します。
+          </p>
+          <video src="../images/prototype/prototype-animation/animation-slide.mov"autoplay muted playsinline preload loop></video>
+        </div>
+      </section>
+      <p class="arrow">⬇︎</p>
+      <p class="Nav">＼もっと詳しく／</p>
+      <section class="udemyArea">
+        <div class="udemy-about">
+          <p class="udemy-Noto">
+            トランジションの使い方をもっと詳しく知りたい！という方はUdemyの動画を視聴してください。<br>
+            下記講座で詳しく説明してくれます☆
+          </p>
+          <div class="udemy-URL">
+            <a href="https://www.udemy.com/course/figma-app-design/learn/lecture/19841098#overview" target="_blank">・セクション8：高品質なプロトタイピング 95.オーバーレイを実現する&nbsp;▷</a>
+          </div>
+        </div>
+      </section>
+<!-- TOPへ戻る -->
+      <div id="page_top">
+        <a href="#"><img src="../images/TOP-back.svg" width="48" height="48" alt="Buttoon"></a>
+      </div>
+    </main>
+<!-- footer -->
+    <div class="MENUTOP">
+      <a href="../index.html">◀︎MENUへ戻る</a>
+    </div>
+   <footer>
+      <p>©2023 Rio. All Rights Reserved.test</p>
+   </footer> 
+ </body>
+</html>
