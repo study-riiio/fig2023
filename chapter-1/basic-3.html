@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="はじめてFigmaを使用する方にちょこっと便利な機能を紹介します">
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+  <!-- 検索対象外 
+  <meta name="robots" content="noindex,nofollow">-->
+  <!-- icon -->
+  <link rel="icon" href="../favicon.svg" type="images/svg+xml">
+  <link rel="icon alternate" href="../favicon.png" type="images/png">
+  <link rel="apple-touch-icon" href="../images/menu/webclip.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../css/basic.css">
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/script.js"></script>
+  <title>第一章　きほん③</title>
+  </head>
+    <body>
+<!--header-->
+      <header>
+        <p>
+          第一章　きほん③
+        </p>
+        <button>
+          <img src="../images/menu/button.png" width="24" height="24" alt="Buttoon">
+        </button>
+      </header>
+      <nav>
+        <ul class="hamburgerMenu">
+          <li class="hamburgerMenu-liItem"><a href="../index.html">MENU</a></li>
+          <li class="hamburgerMenu-liItem-name"><p>第一章　基本</p></li>
+          <li class="hamburgerMenu-liItem"><a href="../chapter-1/strat.html">はじめる</a></li>
+          <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-1.html">きほん①</a></li>
+          <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-2.html">きほん②</a></li>
+          <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-3.html">きほん③</a></li>
+          <li class="hamburgerMenu-liItem-name"><p>第二章　プラグイン</p></li>
+          <li class="hamburgerMenu-liItem"><a href="../chapter-2/plugin-ex.html">プラグインとは</a></li>
+          <li class="hamburgerMenu-liItem"><a href="../chapter-2/plugin-list.html">一覧</a></li>
+          <li class="hamburgerMenu-liItem-name"><p>第三章　プロトタイプ</p></li>
+          <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-ex-1.html">プロトタイプとは</a></li><li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-header.html">ヘッダーの固定</a></li><li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-animation.html">アニメーション</a></li>
+          <li class="hamburgerMenu-liItem-name"><p>記事</p></li>
+          <li class="hamburgerMenu-liItem"><a href="../article/article-1.html">背景作ってみた</a></li>
+          <li class="hamburgerMenu-liItem"><a href="../article/article-2.html">ホバーつけてみた</a></li>
+          <li class="hamburgerMenu-liItem-name"><p></p></li>
+        </ul>
+      </nav>
+<!--main-->
+    <main>
+      <p class="no-taitle">
+        便利機能紹介☆
+      </p>
+      <ul class="Anchor">
+        <li><a href="#FlameAnchor">Flameの選択&nbsp;▼</a></li>
+        <li><a href="#FontAnchor">Fontのインストール&nbsp;▼</a></li>
+        <li><a href="#styleAnchor">カラースタイル・テキストスタイルの登録&nbsp;▼</a></li>
+        <li><a href="#componentAnchor">メインコンポーネントへの移動&nbsp;▼</a></li>
+        <li><a href="#layoutAnchor">オートレイアウトとコンストレイン（制約）&nbsp;▼</a></li>
+      </ul>
+      <div id="FlameAnchor"></div>
+      <div class="chapter-3taitle">
+        <p>
+          Flameの選択
+        </p>
+      </div>
+      <section class="no-FlameArea">
+        <p class="contentsInner">
+          フレームの機能の一つに描画範囲の役割があります。デザインを作成する際に、基準となる描画範囲を最初に設定します。<br>
+          フレームを選択し、デザインパネルを開くことでiPhone・タブレッド・デスクトップ・ノートパソコン等の画面サイズを選択することが可能です。
+          最初に描画範囲を決める際にぜひ使用してみてください。
+        </p>
+        <br>
+        <img src="../images/basic/basic-3/basic-03-flame_1.png" alt="フレーム選択画像">
+        <br>
+        <p class="contentsInner">
+          &#9679;選択したフレームのサイズを変更する場合は、デザインパネルの「フレーム」ボタンから変更することが可能です。
+        </p>
+        <br>
+        <img src="../images/basic/basic-3/basic-03-flame_2.png" alt="フレームサイズ画像">
+      </section>
+      <p class="arrow">⬇︎</p>
+      <div id="FontAnchor"></div>
+      <div class="chapter-3taitle">
+        <p>
+          Fontのインストール
+        </p>
+      </div>
+      <section class="no-FontArea">
+        <p class="contentsInner">
+          Figmaでは、Google Fontのいくつかの書体を予め利用することができます。<br>
+          デザインを作成する上で、使用したいフォントがFigmaに入っていない場合、インターネット等で、
+          無料で配布されているFontをインストールして使用することが可能です。
+        </p>
+        <br>
+        <p class="contentsInner">
+          アップルの書体の場合→英数字の箇所は<b>「SFプロ」</b>という書体を使用しています。<br>
+          アップルのような書体で作成したい場合は下記からインストールしてみてください。
+        </p>
+        <div class="URL">
+          <p>
+            ▶︎
+          </p>
+          <a href="https://developer.apple.com/fonts/" target="_blank">https://developer.apple.com/fonts/</a>
+        </div>
+        <br>
+        <p class="inlineText">
+          ポイント！
+        </p>
+        <p class="contentsInner">
+          書体はNot Sans JPまたはHiragino Sansを使用されることが多いと思います。（Hiragino SansはMac OSにデフォルトで搭載されているようです）
+          Not Sans JPもFigmaに搭載されているようですが、文字の太さ（ウェイト）の種類が初期状態では少ないかもしれません。<br>
+          可能であれば、Google Fontからインストールしておきましょう。
+        </p>
+        <br>
+        <p class="contentsInner">
+          <b>Not&nbsp;Sans&nbsp;JP</b>
+        </p>
+        <div class="URL">
+          <p>
+            ▶︎
+          </p>
+          <a href="https://fonts.google.com/noto/specimen/Noto+Sans+JP" target="_blank">https://fonts.google.com/noto/specimen/Noto+Sans+JP</a>
+        </div>
+        <div class="imag2column">
+          <div class="weightstyle">
+            <p>例：Not&nbsp;Sans&nbsp;JPのウエイト</p>
+            <img src="../images/basic/basic-3/basic-03-font_2.png" alt="フォントウエイト画像">
+          </div>
+          <p class="contentsInner">
+            文字の太さ（ウェイト）が例の画像くらい種類があるとデザインが行いやすいのではないかと思います！
+          </p>
+        </div>
+      </section>
+      <br>
+      <p class="arrow">⬇︎</p>
+      <div id="styleAnchor"></div>
+      <div class="chapter-3taitle">
+        <p>
+          カラースタイル・テキストスタイルの登録
+        </p>
+      </div>
+      <section class="no-styleArea">
+        <p class="contentsInner">
+          デザインを作成していくと多くのカラーやテキストを使用します。<br>
+          同じカラーやテキストスタイルを使いまわしたいなと思った時に登録しておくと便利です。
+        </p>
+        <div class="imag2column">
+          <div class="colorstyle">
+            <p>例：カラースタイル</p>
+            <img src="../images/basic/basic-3/basic-03-style_1.png" alt="カラースタイル画像">
+          </div>
+          <div class="textstyle">
+            <p>例：テキストスタイル</p>
+            <img src="../images/basic/basic-3/basic-03-style_2.png" alt="テキストスタイル画像">
+          </div>
+        </div>
+        <div class="colorstyleNoto">
+          <p class="no-taitle">方法</p>
+          <div class="colorstyleNotoInner">
+            <p>
+              &#9679;前提：カラーパネルからカラー設定したオブジェクトを、マウス選択しておきます。<br>
+              ①デザインパネルの「塗り」＞丸4つのメニューらしきアイコンをクリック<br>
+              ②「色スタイル」モーダルの➕ボタンをクリック<br>
+              ③「新しい色のスタイルを作成」モーダルにカラー名（必要であれば説明も）を入力<br>
+              ④スタイルの作成ボタンをクリックするとカラーが登録される<br>
+            </p>
+          </div>
+          <p class="Noto"><font size="3">※テキストスタイルを登録する場合は、デザインパネル＞「テキスト」から進んでください</font></p>
+        </div>
+        <div class="imag4column">
+          <img src="../images/basic/basic-3/basic-03-colorstyle_1.png" alt="カラースタイル①">
+          <p>→</p>
+          <img src="../images/basic/basic-3/basic-03-colorstyle_2.png" alt="カラースタイル②">
+          <p>→</p>
+          <img src="../images/basic/basic-3/basic-03-colorstyle_3.png" alt="カラースタイル③">
+          <p>→</p>
+          <img src="../images/basic/basic-3/basic-03-colorstyle_4.png" alt="カラースタイル④">
+        </div>
+        <br>
+        <p class="inlineText">
+          ポイント！
+        </p>
+        <ul class="contentsInner">
+          <li>・使用する際は、「塗り」または「テキスト」ボタンをクリックすると、登録したカラー・テキストスタイルが表示されます</li>
+          <li>・各スタイルが表示された際に、対象のスタイルの上で右クリックすると削除や編集が可能です</li>
+          <li>・名前に「/（スラッシュ）」を入れることで、グループにまとめることが可能です</li>
+        </ul>
+      </section>
+      <p class="arrow">⬇︎</p>
+      <div id="componentAnchor"></div>
+      <div class="chapter-3taitle">
+        <p>
+          メインコンポーネントへの移動
+        </p>
+      </div>
+      <section class="no-componentArea">
+        <p class="contentsInner">
+          コンポーネントをたくさん作成し、作業を進めていると「メインコンポーネント」がどこにあるか分からなくなることがあります。<br>
+          例えばサイドバナーであったりボタンであったり・・複数のページで使用するオブジェクトはコンポーネント化して使用することが多いため、1発でメインコンポーネントに移動してくれる方法を紹介します。
+        </p>
+        <br>
+        <p class="contentsInner">
+          ①コンポーネントを作成します。「コンポーネント」というフレームに「次へ」ボタンを作成しました。
+        </p>
+        <img src="../images/basic/basic-3/basic-03-component_1.png" alt="コンポーネント画像①">
+        <p class="arrow">⬇︎</p>
+        <p class="contentsInner">
+          ②作成したコンポーネントを派生（コピペ）して、フレーム2にインスタンスを作成しました。<br>
+          ※分かりやすいように色を変更しています
+        </p>
+        <img src="../images/basic/basic-3/basic-03-component_2.png" alt="コンポーネント画像②">
+        <p class="arrow">⬇︎</p>
+        <p class="contentsInner">
+          ③派生したインスタンスを選択し、デザインパネル＞「次へ」の横＞コンポーネントのアイコンマークをクリックします。<br>
+          ※「メインコンポーネントへ移動」というナビが出ます。
+        </p>
+        <img src="../images/basic/basic-3/basic-03-component_3.png" alt="コンポーネント画像③">
+        <p class="arrow">⬇︎</p>
+        <p class="contentsInner">
+          ④最初に作成した、メインコンポーネントへ移動してくれます。コンポーネントが行方不明になった時に使用してみてください！
+        </p>
+        <img src="../images/basic/basic-3/basic-03-component_4.png" alt="コンポーネント画像④">
+      </section>
+      <div id="layoutAnchor"></div>
+      <div class="chapter-3taitle">
+        <p>
+          オートレイアウトとコンストレイン（制約）
+        </p>
+      </div>
+      <section class="no-layoutArea">
+        <p class="no-taitle">
+          &#9679;オートレイアウト
+        </p>
+        <p class="contentsInner">
+          オートレイアウトは最初は難しいと感じるかもしれませんが、覚えてしまえばとても便利な機能です。<br>
+          オブジェクトのサイズ調整、位置の固定、位置の入れ替え等々を自動で行ってくれるため、オブジェクトを追加した際に指定した通りに配置してくれます。<br>
+          効率アップに繋がる機能なため是非チェックしてみてください。
+        </p>
+        <br>
+        <p class="no-taitle">
+          &#9679;コンストレイン（制約）
+        </p>
+        <p class="contentsInner">
+          コンストレイン（制約）は画面のサイズを変更した際にオブジェクトやテキストの位置を固定してくれる機能です。<br>
+          例えば画面下部に設置した登録や保存ボタンであったり、フッターであったり、一覧レコードの編集ボタンであったり・・<br>
+          便利な機能なため、オートレイアウトと合わせてご覧ください。
+        </p>
+        <br>
+        <p class="contentsInner">
+          ※こちらは動画の方が分かりやすいため、動画でのチェックをおすすめします。
+        </p>
+      </section>
+      <section class="udemyArea">
+        <div class="udemy-about">
+          <div class="udemy-URL">
+            <a href="https://www.udemy.com/course/figma-app-design/learn/lecture/19840492#overview" target="_blank">・セクション3：Figmaの基本 20.オートレイアウト&nbsp;▷</a>
+          </div>
+          <div class="udemy-URL">
+            <a href="https://www.udemy.com/course/figma-app-design/learn/lecture/24496906#overview" target="_blank">・セクション3：Figmaの基本 24.複雑なオートレイアウト&nbsp;▷</a>
+          </div>
+          <div class="udemy-URL">
+            <a href="https://www.udemy.com/course/figma-app-design/learn/lecture/19840496#overview" target="_blank">・セクション3：Figmaの基本 21.制約・コンストレイン&nbsp;▷</a>
+          </div>
+          </div>
+      </section>
+        <p class="arrow">⬇︎</p>
+        <p class="Nav">＼もっと詳しく／</p>
+        <section class="udemyArea">
+          <div class="udemy-about">
+            <p class="udemy-Noto">
+              カラースタイル・テキストスタイルをもっと詳しく知りたい！という方はUdemyの動画を視聴してください。<br>
+              下記講座で詳しく説明してくれます☆
+            </p>
+            <div class="udemy-URL">
+              <a href="https://www.udemy.com/course/figma-app-design/learn/lecture/19840482#overview" target="_blank">・セクション3：Figmaの基本 18.よく使うスタイルを登録する&nbsp;▷</a>
+            </div>
+          </div>
+      </section>
+  <!-- TOPへ戻る -->
+      <div id="page_top">
+        <a href="#"><img src="../images/TOP-back.svg" width="48" height="48" alt="Buttoon"></a>
+      </div>
+      </main>
+  <!-- footer -->
+    <div class="MENUTOP">
+      <a href="../index.html">◀︎MENUへ戻る</a>
+    </div>
+   <footer>
+      <p>©2023 Rio. All Rights Reserved.test</p>
+   </footer> 
+  </body>
+</html>
