@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="はじめてFigmaを使用する方にちょこっと便利な機能を紹介します">
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+  <!-- 検索対象外 
+  <meta name="robots" content="noindex,nofollow">-->
+  <!-- icon -->
+  <link rel="icon" href="../favicon.svg" type="images/svg+xml">
+  <link rel="icon alternate" href="../favicon.png" type="images/png">
+  <link rel="apple-touch-icon" href="../images/menu/webclip.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../css/prototype.css">
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/script.js"></script>
+  <title>第三章　こんにちはプロトタイプ編</title>
+  </head>
+  <body>
+<!--header-->
+    <header>
+      <p>
+        第三章　こんにちはプロトタイプ編
+      </p>
+    <button>
+        <img src="../images/menu/button.png" width="24" height="24" alt="Buttoon">
+      </button>
+    </header>
+   <nav>
+     <ul class="hamburgerMenu">
+       <li class="hamburgerMenu-liItem"><a href="../index.html">MENU</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第一章　基本</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/strat.html">はじめる</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-1.html">きほん①</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-2.html">きほん②</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-3.html">きほん③</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第二章　プラグイン</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-2/plugin-ex.html">プラグインとは</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-2/plugin-list.html">一覧</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第三章　プロトタイプ</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-ex-1.html">プロトタイプとは</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-header.html">ヘッダーの固定</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-animation.html">アニメーション</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>記事</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../article/article-1.html">背景作ってみた</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../article/article-2.html">ホバーつけてみた</a></li>
+       <li class="hamburgerMenu-liItem-name"><p></p></li>
+     </ul>
+   </nav>
+<!--main-->
+    <main>
+      <p class="Anchor">
+        <a href="#prototype-ex-Anchor">プロトタイプの使い方&nbsp;▼</a>
+      </p>
+      <div class="prototype-taitle">
+        <p>
+          プロトタイプとは
+        </p>
+      </div>
+      <p class="contentsInner">
+        プロトタイプとは作成したデザイン画面を使用して、画面遷移やインタラクション（双方向でのやり取り）を追加して実際の動きを試作できる機能です。※このボタンをクリックしたらこの画面に遷移するや、このボタンをクリックしたらメニューが表示される等々
+      </p>
+      <section class="prototype-ex-Area">
+        <div class="prototype-ex-Area-Inner">
+          <p class="no-taitle">トリガー：</p>
+          <p class="contentsInner">
+            ユーザが行う「クリック」や「ドラッグ」などのアクションを起こすきっかけ
+          </p>
+        </div>
+        <div class="prototype-ex-Area-Inner">
+          <p class="no-taitle">アクション：</p>
+          <p class="contentsInner">
+            「画面遷移」や「再生」のような動作
+          </p>
+        </div>
+        <p class="contentsInner">
+          これらを組み合わせて、プロトタイプを作成します！
+        </p>
+        <p class="no-taitle">
+          ここではちょっとリアルなモックに見えるよう、おすすめのプロトタイプの使い方を紹介します。
+        </p>
+        <br>
+        <div class="button">
+        <a href="prototype-header.html" class="buttonContents">
+          <div class="buttonContentsInner">
+            <p class="mainatext">ヘッダーの固定等</p>
+            <p class="subtext">ヘッダーを固定しよう</p>
+          </div>
+          <p class="triangle">▶︎</p>
+        </a>
+        <a href="prototype-animation.html" class="buttonContents">
+          <div class="buttonContentsInner">
+            <p class="mainatext">ちょこっとアニメーション</p>
+            <p class="subtext">画面が変わる時にアニメーションを入れよう</p>
+          </div>
+          <p class="triangle">▶︎</p>
+        </a>
+        </div>
+        <p class="NotoInner">
+          プロトタイプの基本の使い方を知りたい方は下記をチェックしてください☆
+        </p>
+        <p class="arrow">⬇︎</p>
+        <div id="prototype-ex-Anchor"></div>
+        <div class="taitle">
+          <p>
+            プロトタイプの使い方
+          </p>
+        </div>
+      </section>
+      <section class="no-prototype-ex-Area">
+        <p class="contentsInner">
+          プロトタイプの基本となる設定方法を説明します。
+        </p>
+        <p class="no-taitle-Noto">方法：遷移</p>
+        <div class="prototypeNotoInner">
+          <p>
+            ※前提：１つのページに遷移させたい画面を設置<br>
+            ①遷移元を選択＞デザインパネル＞プロトタイプを選択<br>
+            ②遷移先の画面を選択<br>
+          </p>
+        </div>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ①遷移元を選択＞デザインパネル＞プロトタイプを選択
+          </p>
+          <img src="../images/prototype/prototype-ex/prototype-ex-01.png" alt="遷移画像①">
+        </div>
+        <p class="arrow">⬇︎</p>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ②遷移先の画面を選択
+          </p>
+          <p class="ex-subtext">
+            遷移元から遷移先をドラッグandドロップで繋げる。または、入力モーダルに「クリック＞次に移動＞遷移先の画面を選択」で画面を繋げることが可能です。<br>
+            例）例ではボタン押下で遷移させたいので、ボタンのフレームから該当の画面に遷移するよう設定しています
+          </p>
+          <img src="../images/prototype/prototype-ex/prototype-ex-02.png" alt="遷移画像②">
+        </div>
+        <p class="arrow">⬇︎</p>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ＼結果／ツールバーの再生ボタンを押下して確認
+          </p>
+          <p class="ex-subtext">
+            「はじめる」のボタン押下
+          </p>
+          <video src="../images/prototype/prototype-ex/connect.mov"autoplay muted playsinline preload loop></video>
+        </div>
+        <p class="contentsInner">
+          前の画面へ戻る（遷移）設定方法を説明します。
+        </p>
+        <p class="no-taitle-Noto">方法：戻る</p>
+        <div class="prototypeNotoInner">
+          <p>
+            ※前提：遷移元と遷移先を設定していること<br>
+            ①デザインパネル＞プロトタイプ＞設定したいフレームを選択<br>
+            インタラクションを追加＞「クリック＞戻る」を選択<br>
+          </p>
+        </div>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ①デザインパネル＞プロトタイプ＞設定したいフレームを選択、インタラクションを追加＞「クリック＞戻る」を選択
+          </p>
+          <p class="ex-subtext">
+            例）例では「MENUへ戻る」に設定しました。MENUへ戻るボタン押下でMENU画面へ遷移します
+          </p>
+          <img src="../images/prototype/prototype-ex/prototype-ex-05.png" alt="遷移画像⑤">
+        </div>
+        <p class="arrow">⬇︎</p>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            ＼結果／ツールバーの再生ボタンを押下して確認
+          </p>
+          <p class="ex-subtext">
+            「MENUへ戻る」のボタンを押下
+          </p>
+          <video src="../images/prototype/prototype-ex/back.mov"autoplay muted playsinline preload loop></video>
+        </div>
+        <div class="ex-Area">
+          <p class="no-taitle">
+            全ての画像を繋げると下記のようになりました！
+          </p>
+          <img src="../images/prototype/prototype-ex/prototype-ex-08.png" alt="遷移画像⑧">
+        </div>
+        <p class="arrow">⬇︎</p>
+        <p class="Nav">＼もっと詳しく／</p>
+        <section class="udemyArea">
+          <div class="udemy-about">
+            <p class="udemy-Noto">
+              プロトタイプの使い方をもっと詳しく知りたい！という方はUdemyの動画を視聴してください。<br>
+              下記講座で詳しく説明してくれます☆
+            </p>
+            <div class="udemy-URL">
+              <a href="https://www.udemy.com/course/figma-app-design/learn/lecture/19841074#overview" target="_blank">・セクション8：高品質なプロトタイピング 86.初めてのプロトタイプ&nbsp;▷</a>
+            </div>
+          </div>
+        </section>
+      </section>
+<!-- TOPへ戻る -->
+      <div id="page_top">
+        <a href="#"><img src="../images/TOP-back.svg" width="48" height="48" alt="Buttoon"></a>
+      </div>
+    </main>
+<!-- footer -->
+    <div class="MENUTOP">
+      <a href="../index.html">◀︎MENUへ戻る</a>
+    </div>
+   <footer>
+      <p>©2023 Rio. All Rights Reserved.test</p>
+   </footer> 
+ </body>
+</html>
