@@ -1,0 +1,390 @@
+@charset "utf-8";
+body {
+ font-family: "Zen Kaku Gothic New", sans-serif;
+ font-size: 24px;
+ margin: 0;
+ display: flex;
+ flex-flow: column;
+ min-height: 100vh;
+}
+header {
+  position: sticky; /* 親要素に合わせてheaderを固定 */
+  top: 0;　/* 親要素のtop位置に */
+  width: 100%;
+  padding: 32px 0;
+  text-align: center;
+  background-color: #30303A;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+footer {
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  background-color: #30303A;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;  
+}
+.ImagLogo Img {
+  width: 100%;
+  height: auto;
+  max-width: 1920px;  /* 画像の横幅サイズにあわせて最大幅を指定 */
+  object-fit: cover;  /* 横幅は画面サイズにあわせて伸縮 */
+}
+.MENUbox {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 120px;
+  text-align: left;
+  background-color: #FF7262;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.explanation {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 0;
+  text-align: center;
+  font-size: 20px;
+}
+/*section 共通*/
+.Nav{
+  font-size: 18px;
+  margin-top: 24px;
+}
+.box1 {
+  background-color: #0ACF83;
+  width: 100%;
+  height: 32px;
+  border-top: 2px solid var(--black, #30303A);
+  border-right: 2px solid var(--black, #30303A);
+  border-left: 2px solid var(--black, #30303A);
+}
+.box2 {
+  background-color: #FBBC04;
+  width: 100%;
+  height: 32px;
+  border-top: 2px solid var(--black, #30303A);
+  border-right: 2px solid var(--black, #30303A);
+  border-left: 2px solid var(--black, #30303A);
+}
+.box3 {
+  background-color: #1ABCFE;
+  width: 100%;
+  height: 32px;
+  border-top: 2px solid var(--black, #30303A);
+  border-right: 2px solid var(--black, #30303A);
+  border-left: 2px solid var(--black, #30303A);
+}
+.sectionContentsInner-1 {
+  font-size: 20px;
+  padding: 8px 32px;
+  border-right: 2px solid var(--black, #30303A);
+  border-left: 2px solid var(--black, #30303A);
+}
+.sectionContentsInner-2-3 {
+  font-size: 20px;
+  padding: 8px 32px;
+  border-right: 2px solid var(--black, #30303A);
+  border-left: 2px solid var(--black, #30303A);
+}
+.BasicArea{
+  margin: 0 120px;
+}
+.PlaginArea {
+  margin-left: 120px;
+  margin-right: 10px;
+}
+.PrototypeArea {
+  margin-right: 120px;
+  margin-left: 10px;
+}
+.ppInner{
+  display: flex;
+  width: 100%;
+  margin-top: 32px;
+}
+.InnerWrap {
+  flex: 1;
+}
+/*ボタン*/
+.buttonContents {
+  display: flex;
+  height: 100%;
+  align-items: stretch;/*子要素の高さが伸縮する指定*/
+  background: repeating-linear-gradient(#EFEFEF, #EFEFEF 10px, #ffffff 10px, #ffffff 20px);/*ストライブ*/
+  padding: 8px 16px;
+  border: 2px solid var(--black, #30303A);
+  color: #000000;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+.buttonContents:hover {/*ボタンホバー*/
+  color: #ffffff;
+  background: #30303A;
+}
+.buttonContentsInner {
+  width: 100%;
+  text-align: center;
+}
+.mainatext {
+  font-weight: 700;
+}
+.subtext {
+  font-weight: 400;
+  font-size: 16px;
+}
+.triangle {
+  font-size: 32px;
+  margin-left:auto;
+}
+.button-basic {
+  display: flex;
+  margin-top: 4px;
+}
+.liItem-1,.liItem-2,.liItem-3 {
+  flex: 1;
+  list-style:none;
+}
+.liItem-1,.liItem-2 {
+  margin-right: 4px;
+}
+/*article*/
+.articleArea {
+  margin: 0 120px;
+  margin-top: 32px;
+}
+.articleInner {
+  display: flex;
+  border: 2px solid;
+  border-color: #A259FF;
+  margin-bottom: 20px;
+  padding: 8px;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+/*article　ボタン*/
+.articleInner:hover {/*ボタンホバー*/
+  color: #A259FF;
+}
+/*form*/
+.formArea {
+  background-color: #F1F1F1;
+  margin-top: 24px;
+  padding-top: 24px;
+}
+h4 {
+  text-align: center;
+}
+.formExplanation p {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  border-bottom: 2px solid #FF7262;
+  width: 800px;
+  margin: 0 auto;
+  align-items: flex-end;
+}
+.formExplanation p:before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/menu/Icon-2.png);
+  background-size: contain;
+}
+.formaction {
+  width: 800px;
+  margin: 0 auto;
+}
+form > p {
+  margin: 16px 0;
+  font-size: 20px;
+}
+input[type="text"], input[type="email"], textarea {
+  border: 2px solid #30303A;
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: 5px;
+  padding: 4px 8px;
+}
+textarea {
+  height: 200px;
+}
+/*form　ボタン*/
+input[type="submit"] {
+  background-color: #FF7262;
+  color: #ffffff;
+  padding: 12px 60px; 
+  margin-top: 24px;
+}
+.submitBtn {
+  text-align: center;
+}
+input[type="submit"]:hover {/*ボタンホバー*/
+  color: #ffffff;
+  background: #30303A;
+}
+.ffJosefin {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+.Annotation {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 16px
+}
+/*ヘッダーメニュー*/
+button {
+  position:absolute;
+  top:32px;
+  left:24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+button:focus{
+  outline:none;
+}
+.hamburgerMenu {
+  display:none;
+  list-style-type:none;
+  width: 30%;
+  height: 90%;
+  box-sizing: border-box;
+  position: fixed;
+  overflow: auto;
+  right: 70%;
+  background-color: #ffffff;
+}
+.hamburgerMenu-liItem a {
+  text-decoration:none;
+  font-weight:bold;
+  display:block;
+  padding:0.5em 1em;
+  color:#30303A;
+  background:#ffffff;
+  border-bottom:1px solid #30303A;
+}
+.hamburgerMenu-liItem a:hover {/*ボタンホバー*/
+  background: rgba(251, 188, 4, 0.3);
+}
+.hamburgerMenu-liItem-name p {
+  text-decoration:none;
+  font-weight:bold;
+  display:block;
+  padding:0.5em 1em;
+  color:#ffffff;
+  background:#30303A;
+  border-bottom:1px solid #30303A;
+}
+/* トップへ戻るボタン */
+#page_top img {
+  width: 48px;
+  height: 48px;
+  margin: initial;
+  display: initial;
+  margin-bottom: 40px;
+  border: initial;
+}
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+#page_top a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 20px;
+}
+/*レスポンシブ　960px以下*/
+@media screen and (max-width: 960px) {
+  header {
+    width: 100%;
+    color: #30303A;
+    font-size: 0px;
+  }
+  footer {
+    width: 100%;
+    font-size: 0.5em;
+  } 
+  .hamburgerMenu {
+    width: 100%;
+    height: 90%;
+    right: 0%;
+  }
+  button {
+    position:absolute;
+    top:20px;
+    left:16px;
+  }
+  .ImagLogo Img {
+    width: 100%;
+    height: auto;
+    max-width: 9600px;  /* 画像の横幅サイズにあわせて最大幅を指定 */
+    object-fit: cover;  /* 横幅は画面サイズにあわせて伸縮 */
+  }
+  .MENUbox {
+    width: 100%;
+    padding-left: 10px;
+    text-align: left;
+  }
+  .explanation {
+    display: block;
+    justify-content: none;
+    align-items: none;
+    padding: none;
+    margin: 0 8px;
+    text-align: left;
+    font-size: 0.7em;
+  }
+  .BasicArea,.PlaginArea,.PrototypeArea,.articleArea {
+    margin: 0 8px;
+  }
+  .ppInner{
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+  }
+  .button-basic {
+    display: block;
+  }
+  .liItem-1,.liItem-2 {
+    margin-right: 0px;
+  }
+  .liItem-2,.liItem-3 {
+    margin-top: 4px;
+  }
+  .sectionContentsInner-1 h3,.sectionContentsInner-2-3 h3 {
+    font-size: 1em;
+  }
+  .sectionContentsInner-1 p,.sectionContentsInner-2-3 p {
+    font-size: 0.8em;
+  }
+  .mainatext {
+    font-size: 0.8em;
+    font-weight: 700;
+  }
+  .articleArea p {
+    font-size: 0.8em;
+  }
+  .formaction,.formExplanation p {
+    width: 100%;
+    font-size: 0.6em;
+    margin-bottom: 1em;
+  }
+  .formaction p {
+    margin: 0 8px;
+  }
+  #page_top {
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+  }
