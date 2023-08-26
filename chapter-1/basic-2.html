@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="はじめてFigmaを使用する方にちょこっと便利な機能を紹介します">
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+  <!-- 検索対象外 
+  <meta name="robots" content="noindex,nofollow">-->
+  <!-- icon -->
+  <link rel="icon" href="../favicon.svg" type="images/svg+xml">
+  <link rel="icon alternate" href="../favicon.png" type="images/png">
+  <link rel="apple-touch-icon" href="../images/menu/webclip.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../css/basic.css">
+  <script src="../js/jquery-3.7.0.min.js"></script>
+  <script src="../js/script.js"></script>
+  <title>第一章　きほん②</title>
+  </head>
+  <body>
+<!--header-->
+    <header>
+      <p>
+        第一章　きほん②
+      </p>
+      <button>
+        <img src="../images/menu/button.png" width="24" height="24" alt="Buttoon">
+      </button>
+    </header>
+   <nav>
+     <ul class="hamburgerMenu">
+       <li class="hamburgerMenu-liItem"><a href="../index.html">MENU</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第一章　基本</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/strat.html">はじめる</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-1.html">きほん①</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-2.html">きほん②</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-1/basic-3.html">きほん③</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第二章　プラグイン</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-2/plugin-ex.html">プラグインとは</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-2/plugin-list.html">一覧</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>第三章　プロトタイプ</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-ex-1.html">プロトタイプとは</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-header.html">ヘッダーの固定</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../chapter-3/prototype-animation.html">アニメーション</a></li>
+       <li class="hamburgerMenu-liItem-name"><p>記事</p></li>
+       <li class="hamburgerMenu-liItem"><a href="../article/article-1.html">背景作ってみた</a></li>
+       <li class="hamburgerMenu-liItem"><a href="../article/article-2.html">ホバーつけてみた</a></li>
+       <li class="hamburgerMenu-liItem-name"><p></p></li>
+     </ul>
+   </nav>
+<!--main-->
+    <main>
+      <p class="Anchor">
+        <a href="#toolAnchor">ツールバー&nbsp;▼</a>
+        <a href="#designpanelAnchor">デザインパネル&nbsp;▼</a>
+        <a href="#layerpanelAnchor">レイヤーパネルのアイコン&nbsp;▼</a>
+      </p>  
+      <div id="toolAnchor"></div>
+      <div class="taitle">
+          <p>
+            ツールバー
+          </p>
+      </div>
+<!--section-->
+    <section class="no-toolArea">
+      <p class="contentsInner">
+        Figmaアートボード画面のツールバーを説明します。
+      </p>
+      <br>
+      <img src="../images/basic/basic-2/basic-02-tool_1.png" alt="ツール画像">
+      <p class="contentsInner">
+        ツールバーは①〜⑨に加えて、右側に「共有」ボタン・「▷プロトタイプ表示」ボタン・「画面の拡大縮小」ボタンがあります。
+      </p>
+      <br>
+      <table class="toolbarT">
+        <tr>
+          <td>①</td>
+          <td>Figmaメニューボタン</td>
+          <td>全てのメニューが集結。階層タイプの基本メニュー</td>
+        </tr>
+        <tr>
+          <td>②</td>
+          <td>デザインページ、移動・拡大縮小</td>
+          <td>デザインページの表示、フレーム・オブジェクトの移動や拡大縮小が可能</td>
+        </tr>
+        <tr>
+          <td>③</td>
+          <td>フレームツール</td>
+          <td>デザインの描画範囲を設定するツール</td>
+        </tr>
+        <tr>
+          <td>④</td>
+          <td>シェイプツール（図形）</td>
+          <td>図形や線、画像の描画ツール</td>
+        </tr>
+        <tr>
+          <td>⑤</td>
+          <td>ペンツール</td>
+          <td>ペンは点と点を繋いで線を描画。鉛筆はフリーハンドのペンツール</td>
+        </tr>
+        <tr>
+          <td>⑥</td>
+          <td>テキストツール</td>
+          <td>テキストの入力</td>
+        </tr>
+        <tr>
+          <td>⑦</td>
+          <td>プラグインツール</td>
+          <td>画面遷移やボタンアクションなどの設定を行うツール</td>
+        </tr>
+        <tr>
+          <td>⑧</td>
+          <td>手のひらツール</td>
+          <td>画面の表示位置をちょっとずらしたりする時に使うツール</td>
+        </tr>
+        <tr>
+          <td>⑨</td>
+          <td>コメントツール</td>
+          <td>任意の場所にアンカーを付けて、コメントを残せる。表示や返信が可能</td>
+        </tr>
+      </table>
+      <br>
+      <p class="contentsInner">
+        オブジェクトを選択している時に表示されるのは下記です。
+      </p>
+      <br>
+      <img src="../images/basic/basic-2/basic-02-tool_2.png" alt="オブジェクト選択時画像">
+      <table class="toolbarT-2">
+        <tr>
+          <td>⑩</td>
+          <td>オブジェクト編集</td>
+          <td>オブジェクトを編集モードにすることが可能。ベクトル編集</td>
+        </tr>
+        <tr>
+          <td>⑪</td>
+          <td>コンポーネント作成</td>
+          <td>繰り返し使用するデザインをテンプレート作成</td>
+        </tr>
+        <tr>
+          <td>⑫</td>
+          <td>マスク</td>
+          <td>オブジェクトの特定の領域を表示しながら残りの領域を隠す</td>
+        </tr>
+      </table>
+      <br>
+      <p class="contentsInner">
+        ファイルの設定は下記で行うことが可能です。
+      </p>
+      <br>
+      <img src="../images/basic/basic-2/basic-02-tool_3.png" alt="ファイルの設定画像">
+      <table class="toolbarT-3">
+        <tr>
+          <td>⑬</td>
+          <td>ファイルの設定</td>
+          <td>ファイル名の変更、お気に入り追加、エクスポート等のファイル設定</td>
+        </tr>
+      </table>
+      <br>
+      <p class="NotoInner">
+        基本的に全て使用します。こういうツールメニューがあるんだな〜ということと、ここをクリックしたらいろいろできる！ということを覚えておいてください☆
+      </p>
+    </section>
+    <section class="trivia-Area">
+      <div class="trivia-taitle">
+        <p>
+          ちょこっと豆知識
+        </p>
+      </div>
+      <div class="trivia-about">
+        <img src="../images/basic/basic-2/basic-02-trivia_1.png" alt="豆知識画像">
+        <div class="trivia-contentsInner">
+        <di>
+          <dt>Figmaメニュー＞ファイルの順に進むと</dt>
+          <dd>・ローカルコピーの保存</dd>
+          <dd>・バージョン履歴の表示　があります。</dd>
+        </di>
+        <br>
+        <di>
+          <dt>・ローカルコピーの保存</dt>
+          <dd>「.fig」の拡張子でページごとローカルにダウンロードが可能です。verを保存したいという方や、Slackで送りたい方はこちらからダウンロードしましょう。</dd>
+        </di>
+        <br>
+        <di>
+          <dt>・バージョン履歴の表示</dt>
+          <dd>変更履歴を表示することが可能です。間違えて消してしまたけど、戻したいという方はバージョン履歴を確認しましょう。</dd>
+        </di>
+        </div>
+        </div>
+      </section>
+      <p class="arrow">⬇︎</p>
+      <div id="designpanelAnchor"></div>
+      <div class="taitle">
+          <p>
+            デザインパネル
+          </p>
+      </div>
+      <section class="no-designpanelArea">
+        <p class="contentsInner">
+          続いてFigmaデザインバネルを説明します。
+        </p>
+        <div class="imag2column">
+          <img src="../images/basic/basic-2/basic-02-designpanel_1.png" alt="デザインバネル画像">
+          <p class="contentsInner">
+            デザインパネルは<span style="color:#F24E1E;"><b>選択しているオブジェクトやフレームに対して</b></span>「あ〜したい」「こ〜したい」の設定が可能です。
+          </p>
+        </div>
+        <table class="designpanelT">
+        <tr>
+          <td>①</td>
+          <td>デザイン</td>
+          <td>レイアウト、カラー、テキストスタイル、線、エフェクトの設定が可能エクスポートが可能</td>
+        </tr>
+        <tr>
+          <td>②</td>
+          <td>プロトタイプ</td>
+          <td>プロトタイプ（画面遷移）の設定</td>
+        </tr>
+        <tr>
+          <td>③</td>
+          <td>インスペクト</td>
+          <td>カラーコード、CSS・IOS・Androidコードの確認とコピーが可能</td>
+        </tr>
+        </table>
+        <p class="NotoInner">
+          まずは図形のサイズを変更したり、動かしたり、色を設定するところから始めてみましょう。
+          オブジェクトに対して設定ができる機能なんだな〜！ということを覚えておいてください☆
+        </p>
+        <section class="trivia-Area">
+          <div class="trivia-taitle">
+            <p>
+              ちょこっと豆知識
+            </p>
+          </div>
+          <div class="trivia-about">
+            <img src="../images/basic/basic-2/basic-02-trivia_2.png" alt="豆知識画像">
+            <div class="trivia-contentsInner">
+              <di>
+                <dt>デザインタブ＞下にスクロール＞エクスポートボタンをクリック</dt><br>
+                <dd>選択しているレイヤーやオブジェクトをローカルにダウンロードすることが可能です。画面設計書などにスクリーン画像を貼る際にとても便利です。エクスポートボタンからダンロードしてみましょう。</dd>
+              </di>
+            </div>
+          </div>
+        </section>
+      </section>
+      <p class="arrow">⬇︎</p>
+      <div id="layerpanelAnchor"></div>
+      <div class="taitle">
+          <p>
+            レイヤーパネルのアイコンについて
+          </p>
+      </div>
+      <section class="no-layerpanelArea">
+        <div class="imag2column">
+          <img src="../images/basic/basic-2/basic-02-layerpanel_1.png" alt="レイヤーバネル画像">
+          <p class="contentsInner">
+            キャンバスに追加したフレームやグループ、オブジェクトはレイヤーパネルで管理します。<br>レイヤーがフレームやグループ、シェイプなど、どの種類なのかはアイコンで判断できます。アイコンを見るとオブジェクトがどういう状態なのかも読み取ることができるため、覚えると便利です。
+          </p>
+        </div>
+          <table class="layerpanelT">
+            <tr>
+              <td>①</td>
+              <td><img src="../images/basic/basic-2/basic-02-mark_1.png" alt="マーク1画像"></td>
+              <td>グループ</td>
+              <td>グループ化したオブジェクト</td>
+            </tr>
+            <tr>
+              <td>②</td>
+              <td><img src="../images/basic/basic-2/basic-02-mark_2.png" alt="マーク2画像"></td>
+              <td>フレーム</td>
+              <td>オートレイヤーが入っている親フレーム。子どものレイヤー位置が中央で表示</td>
+            </tr>
+            <tr>
+              <td>③</td>
+              <td><img src="../images/basic/basic-2/basic-02-mark_3.png" alt="マーク3画像"></td>
+              <td>フレーム</td>
+              <td>オートレイヤーが入っている親フレーム。子どものレイヤー位置が左上で表示</td>
+            </tr>
+            <tr>
+              <td>④</td>
+              <td><img src="../images/basic/basic-2/basic-02-mark_4.png" alt="マーク4画像"></td>
+              <td>コンポネート</td>
+              <td>コンポネーネント化したオブジェクト</td>
+            </tr>
+            <tr>
+              <td>⑤</td>
+              <td><img src="../images/basic/basic-2/basic-02-mark_5.png" alt="マーク5画像"></td>
+              <td>インスタンス</td>
+              <td>コンポーネントから派生したオブジェクト、テキストのみ変更可能、構造の変更は不可</td>
+            </tr>
+            <tr>
+              <td>⑥</td>
+              <td><img src="../images/basic/basic-2/basic-02-mark_6.png" alt="マーク6画像"></td>
+              <td>テキスト</td>
+              <td>テキストオブジェクト</td>
+            </tr>
+            <tr>
+              <td>⑦</td>
+              <td><img src="../images/basic/basic-2/basic-02-mark_7.png" alt="マーク7画像"></td>
+              <td>画像</td>
+              <td>画像オブジェクト</td>
+            </tr>
+            <tr>
+              <td>⑧</td>
+              <td><img src="../images/basic/basic-2/basic-02-mark_8.png" alt="マーク8画像"></td>
+              <td>図形</td>
+              <td>図形オブジェクト</td>
+            </tr>
+          </table>
+      </section>
+      <p class="arrow">⬇︎</p>
+      <p class="Nav">＼もっと詳しく／</p>
+      <section class="udemyArea">
+        <div class="udemy-about">
+          <p class="udemy-Noto">
+            ツールバーをもっと詳しく知りたい！という方はUdemyの動画を視聴してください。<br>
+            下記講座で詳しく説明してくれます☆
+          </p>
+            <div class="udemy-URL">
+              <a href="https://www.udemy.com/course/figma-app-design/learn/lecture/19840448#overview" target="_blank">・セクション3：Figmaの基本 7．Figmaの基本操作&nbsp;▷</a>
+            </div>
+          </div>
+      </section>
+<!-- TOPへ戻る -->
+      <div id="page_top">
+        <a href="#"><img src="../images/TOP-back.svg" width="48" height="48" alt="Buttoon"></a>
+      </div>
+    </main>
+<!-- footer -->
+    <div class="MENUTOP">
+      <a href="../index.html">◀︎MENUへ戻る</a>
+    </div>
+   <footer>
+      <p>©2023 Rio. All Rights Reserved.test</p>
+   </footer> 
+  </body>
+</html>
