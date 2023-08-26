@@ -1,0 +1,357 @@
+@charset "utf-8";
+/*共通*/
+body {
+ font-family: "Zen Kaku Gothic New", sans-serif;
+ font-size: 22px;
+ margin: 0;
+ display: flex;
+ flex-flow: column;
+ min-height: 100vh;
+ background-color: #F1F1F1;
+}
+header {
+  position: sticky; /* 親要素に合わせてheaderを固定 */
+  top: 0;　/* 親要素のtop位置に */
+  width: 100%;
+  padding: 32px 0;
+  text-align: center;
+  background-color: #30303A;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.MENUTOP {
+  text-align: right;
+}
+.MENUTOP a {
+  font-size: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+.MENUTOP a:hover {/*ボタンホバー*/
+  color: #FF7262;
+}
+footer {
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  background-color: #30303A;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;  
+}
+main {
+  margin: 32px 120px;
+}
+/*矢印*/
+.arrow {
+  font-size: 42px;
+  text-align: center;
+}
+/*img*/
+.ex-Area img {
+  display: block;
+  text-align: center;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 1px solid #30303A;
+}
+button img {
+  width: 24px;
+  height: 24px;
+  margin: initial;
+  display: initial;
+  margin-bottom: initial;
+  border: initial;
+}
+/*taitle*/
+.taitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #a259ff;
+}
+.tatleInner {
+  font-size: 28px;
+  font-weight: 700;
+  padding-left: 20px;
+}
+.tatleInner:before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-image: url(../images/article/background-img/Icon-3.png);
+  background-size: contain;
+  position: relative;
+  top: 5px;
+  left: 0px;
+  z-index: -100;
+}
+.no-taitle {
+  margin-top: 1em;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 0.2em;
+}
+.no-taitle-last {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 22px;
+  font-weight: 500;
+}
+.no-taitle-last-mark {
+  text-align: center;
+  margin: 1em 0;
+}
+.no-taitle-last-mark-child {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: #EDDE5D;
+}
+.no-taitle-sub {
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+}
+/*Inner*/
+.contentsInner {
+  padding: 8px 24px;
+}
+.NotoInner {
+  margin: 2em 0;
+  font-weight: 700;
+  text-align: center
+}
+.backgroundNotoInner {
+  border: 2px solid #a259ff;
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+.Noto {
+  margin-left: 16px;
+}
+/*Line*/
+.Line {
+  margin: 2em 0;
+  width: 100%;
+  border-bottom: dotted;
+  border-bottom-color: #a259ff;
+}
+/*ヘッダーメニュー*/
+button {
+  position:absolute;
+  top:32px;
+  left:24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+button:focus{
+  outline:none;
+}
+.hamburgerMenu {
+  display:none;
+  list-style-type:none;
+  width: 30%;
+  height: 90%;
+  box-sizing: border-box;
+  position: fixed;
+  overflow: auto;
+  right: 70%;
+  background-color: #ffffff;
+}
+.hamburgerMenu-liItem a {
+  text-decoration:none;
+  font-weight:bold;
+  display:block;
+  padding:0.5em 1em;
+  color:#30303A;
+  background:#ffffff;
+  border-bottom:1px solid #30303A;
+}
+.hamburgerMenu-liItem a:hover {/*ボタンホバー*/
+  background: rgba(251, 188, 4, 0.3);
+}
+.hamburgerMenu-liItem-name p {
+  text-decoration:none;
+  font-weight:bold;
+  display:block;
+  padding:0.5em 1em;
+  color:#ffffff;
+  background:#30303A;
+  border-bottom:1px solid #30303A;
+}
+/* トップへ戻るボタン */
+#page_top img {
+  width: 48px;
+  height: 48px;
+  margin: initial;
+  display: initial;
+  margin-bottom: 40px;
+  border: initial;
+}
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+#page_top a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 20px;
+}
+/*レスポンシブ　960px以下*/
+@media screen and (max-width: 960px) {
+  header {
+    width: 100%;
+    color: #30303A;
+    font-size: 0px;
+  }
+  footer {
+    width: 100%;
+    font-size: 0.5em;
+  } 
+  .hamburgerMenu {
+    width: 100%;
+    height: 90%;
+    right: 0%;
+  }
+  button {
+    position:absolute;
+    top:20px;
+    left:16px;
+  }
+  main {
+    margin: 0px 8px;
+  }
+  #page_top {
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+  }
+  .taitle {
+    display: block;
+  }
+  .date {
+    text-align: right;
+  }
+  .taitle p {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 8px;
+    padding-left: 4px;
+  }
+  .taitle p:before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 5px;
+    left: 0px;
+  }
+  .prototype-header-taitle p {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 8px;
+    padding-left: 4px;
+    }
+  .prototype-header-taitle p:before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 5px;
+    left: 0px;
+    }
+  .buttonContents {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(#EFEFEF, #EFEFEF 10px, #ffffff 10px, #ffffff 20px);/*ストライブ*/
+    padding: 8px 16px;
+    border: 2px solid var(--black, #30303A);
+    color: #000000;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .trivia-about,.udemy-Noto,.udemy-URL a {
+    font-size: 0.8em;
+  }
+  .no-taitle {
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  .contentsInner {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+  .URL {
+    display: block;
+    padding: 0px 8px;
+    font-size: 0.8em;
+  }
+  .URL a {
+    font-size: 0.9em;
+    word-break: break-all;
+  }
+  .arrow {
+    font-size: 1.5em;
+  }
+  img {
+    margin-bottom: 1em;
+  }
+  .ex-Area img {
+    object-fit: cover;
+    width: 80%;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 40px;
+  }
+  .trivia-about {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+  }
+  .trivia-contentsInner {
+    margin-left: 0.5em;
+  }
+  .trivia-about img {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-bottom: initial;
+    border: initial;
+  }
+  .Anchor li {
+    display: block;
+  }
+  .NotoInner {
+    margin: 8px;
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+  .prototype-ex-Area-Inner {
+    display: block;
+    padding: 0px 8px
+  }
+  .button {
+    display: block;
+  }
+  .button a {
+    margin-top: 4px;
+  }
+}
